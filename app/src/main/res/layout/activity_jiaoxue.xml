@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.JiaoxueActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:padding="10dp"
+        android:background="@color/themeColor">
+        <ImageView
+            android:id="@+id/jiaoxue_iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:onClick="onClick"
+            android:src="@mipmap/ic_back"/>
+        <TextView
+            style="@style/titleTvStyle"
+            android:text="书法视频教学"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_beitie_shape"
+                android:text="楷书视频教学"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/jiaoxue_luzhongnan"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_all_shape"
+                    android:text="卢中南楷书（软笔）" />
+
+                <Button
+                    android:id="@+id/jiaoxue_tianyingzhang01"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_all_shape"
+                    android:text="田英章楷书（硬笔）" />
+            </LinearLayout>
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_beitie_shape"
+                android:text="隶书视频教学"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/jiaoxue_zhangji"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_all_shape"
+                    android:text="张继隶书" />
+
+                <Button
+                    android:id="@+id/jiaoxue_zhangzhanli"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_all_shape"
+                    android:text="张站立隶书" />
+            </LinearLayout>
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_beitie_shape"
+                android:text="行书教学"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/jiaoxue_zhangxuguang"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_all_shape"
+                    android:text="张旭光行书（软笔）" />
+
+                <Button
+                    android:id="@+id/jiaoxue_tianyingzhang02"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_all_shape"
+                    android:text="田英章楷书（硬笔）" />
+            </LinearLayout>
+
+
+            <!--            <Button-->
+            <!--                android:text="书法纪录片"-->
+            <!--                android:background="@drawable/btn_beitie_shape"-->
+            <!--                android:textStyle="bold"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"/>-->
+            <!--            <LinearLayout-->
+            <!--                android:orientation="horizontal"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content">-->
+
+            <!--                <Button-->
+            <!--                    android:layout_width="0dp"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:layout_weight="1"-->
+            <!--                    android:id="@+id/jiaoxue_shufa01"-->
+            <!--                    android:background="@drawable/btn_all_shape"-->
+            <!--                    android:text="中国书法五千年" />-->
+
+            <!--                <Button-->
+            <!--                    android:text="千年书法"-->
+            <!--                    android:id="@+id/jiaoxue_shufa02"-->
+            <!--                    android:background="@drawable/btn_all_shape"-->
+            <!--                    android:layout_width="0dp"-->
+            <!--                    android:layout_weight="1"-->
+            <!--                    android:layout_height="wrap_content"/>-->
+            <!--            </LinearLayout>-->
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

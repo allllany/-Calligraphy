@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.ZhishiDescActivity">
+    <LinearLayout
+        android:id="@+id/fooddesc_layout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/themeColor">
+
+            <ImageView
+                android:id="@+id/fooddesc_iv_back"
+                android:layout_width="33dp"
+                android:layout_height="22dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:src="@mipmap/btn_back" />
+
+            <TextView
+                android:id="@+id/fooddesc_tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="牛肉"
+                android:textColor="@color/colorWhite"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/fooddesc_iv_bigpic"
+            android:layout_width="match_parent"
+            android:layout_height="335dp"
+            android:layout_margin="20dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/m_zhishi" />
+        <TextView
+            android:id="@+id/fooddesc_tv_title2"
+            android:text="牛肉"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/fooddesc_tv_desc"
+            android:layout_margin="20dp"
+            android:text="11111"
+            android:textSize="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:background="@mipmap/food_info_middle_background"
+            android:text="关键词："
+            android:padding="10dp"
+            android:textSize="16dp"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/food_tv_not"
+            android:text="橄榄菜、韭菜"
+            android:layout_marginLeft="20dp"
+            android:textSize="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</ScrollView>

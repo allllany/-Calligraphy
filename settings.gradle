@@ -1,0 +1,7 @@
+include ':SweetAlertDialog'
+include ':app'
+
+include ':library'
+
+include ':libraries:opencv'
+

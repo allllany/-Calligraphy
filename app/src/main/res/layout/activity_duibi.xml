@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.Duibi_activity.DuibiActivity">
+    <!--    最上面标题栏-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:padding="10dp"
+        android:background="@color/themeColor">
+        <ImageView
+            android:id="@+id/duibi_iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:onClick="onClick"
+            android:src="@mipmap/ic_back"/>
+        <TextView
+            style="@style/titleTvStyle"
+            android:text="智能对比"/>
+    </RelativeLayout>
+
+<!--    楷书智能对比 求是-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/duibi_kaishu01"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_all_shape"
+            android:onClick="onClick"
+            android:text="楷书智能对比（求）" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:onClick="onClick"
+            android:id="@+id/duibi_kaishu02"
+            android:background="@drawable/btn_all_shape"
+            android:text="楷书智能对比（是）" />
+    </LinearLayout>
+
+    <!--    楷书智能对比 担当-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/duibi_kaishu03"
+            android:onClick="onClick"
+            android:background="@drawable/btn_all_shape"
+            android:text="楷书智能对比（担）" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:onClick="onClick"
+            android:id="@+id/duibi_kaishu04"
+            android:background="@drawable/btn_all_shape"
+            android:text="楷书智能对比（当）" />
+    </LinearLayout>
+
+    <!--    隶书智能对比 一字-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/duibi_lishu01"
+            android:onClick="onClick"
+            android:background="@drawable/btn_all_shape"
+            android:text="隶书智能对比（一）" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:onClick="onClick"
+            android:id="@+id/duibi_lishu02"
+            android:background="@drawable/btn_all_shape"
+            android:text="隶书智能对比（字）" />
+    </LinearLayout>
+
+    <!--    隶书智能对比 千金-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/duibi_lishu03"
+            android:onClick="onClick"
+            android:background="@drawable/btn_all_shape"
+            android:text="隶书智能对比（千）" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:onClick="onClick"
+            android:id="@+id/duibi_lishu04"
+            android:background="@drawable/btn_all_shape"
+            android:text="隶书智能对比（金）" />
+    </LinearLayout>
+
+    <!--    行书智能对比 奋发-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/duibi_xingshu01"
+            android:onClick="onClick"
+            android:background="@drawable/btn_all_shape"
+            android:text="行书智能对比（奋）" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:onClick="onClick"
+            android:id="@+id/duibi_xingshu02"
+            android:background="@drawable/btn_all_shape"
+            android:text="行书智能对比（发）" />
+    </LinearLayout>
+
+    <!--    行书智能对比 图强-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/duibi_xingshu03"
+            android:onClick="onClick"
+            android:background="@drawable/btn_all_shape"
+            android:text="行书智能对比（图）" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:onClick="onClick"
+            android:id="@+id/duibi_xingshu04"
+            android:background="@drawable/btn_all_shape"
+            android:text="行书智能对比（强）" />
+    </LinearLayout>
+
+</LinearLayout>

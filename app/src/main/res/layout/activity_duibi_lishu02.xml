@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.Duibi_activity.Duibi_lishuActivity02">
+
+
+    <!--    最上面标题栏-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:padding="10dp"
+        android:background="@color/themeColor">
+        <ImageView
+            android:id="@+id/duibi_lishu02_iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:onClick="onClick"
+            android:src="@mipmap/ic_back"/>
+        <TextView
+            style="@style/titleTvStyle"
+            android:text="隶书书写智能对比-字"/>
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/lishu_duibi02" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorBlack"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="'字' ——出自《曹全碑》"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="@color/colorRed"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="请上传您所写字的照片："/>
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:onClick="onClick"
+        android:id="@+id/addPic"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/add" />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_beitie_shape"
+        android:onClick="onClick"
+        android:id="@+id/startCompare"
+        android:text="开始智能对比"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+</LinearLayout>

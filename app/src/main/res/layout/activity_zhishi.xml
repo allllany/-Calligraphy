@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.ZhishiActivity">
+    <!--    最上面搜索栏-->
+    <RelativeLayout
+        style="@style/titleTvStyle"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:padding="10dp"
+        android:background="@color/themeColor">
+
+        <ImageView
+            android:id="@+id/info_iv_flush"
+            android:layout_width="40dp"
+            android:layout_height="28dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/clear_btn" />
+
+        <ImageView
+            android:id="@+id/info_iv_search"
+            android:layout_width="34dp"
+            android:layout_height="29dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="18dp"
+            android:layout_toLeftOf="@id/info_iv_flush"
+            android:src="@mipmap/search_btn" />
+
+        <EditText
+            android:id="@+id/info_et_search"
+            android:layout_width="240dp"
+            android:layout_height="37dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/info_iv_search"
+            android:background="@drawable/info_et_bg"
+            android:paddingLeft="20dp"
+            android:textColor="@color/colorWhite" />
+
+        <ImageView
+            android:id="@+id/zhishi_iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="11dp"
+            android:layout_toLeftOf="@id/info_et_search"
+            android:onClick="onClick"
+            android:src="@mipmap/ic_back" />
+    </RelativeLayout>
+    <!--内容显示-->
+    <ListView
+        android:id="@+id/infolist_lv"
+        android:divider="@color/dividerColor"
+        android:dividerHeight="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </ListView>
+</LinearLayout>

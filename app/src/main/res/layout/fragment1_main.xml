@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!--    最顶部-->
+    <RelativeLayout
+        android:background="@color/themeColor"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <!--在style.xml中直接设定格式进行运用-->
+        <TextView
+            style="@style/titleTvStyle"
+            android:text="@string/app_name"/>
+<!--        <ImageView-->
+<!--            android:id="@+id/main_iv_setting"-->
+<!--            android:onClick="OnClick"-->
+<!--            android:src="@mipmap/ic_setting"-->
+<!--            android:layout_alignParentRight="true"-->
+<!--            android:layout_marginRight="10dp"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="match_parent"/>-->
+    </RelativeLayout>
+    <!--    搜索栏-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="40dp">
+        <EditText
+            android:id="@+id/main_et"
+            android:maxLength="1"
+            android:hint="请输入查询文字"
+            android:background="@drawable/main_et_bg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/main_iv_search"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:onClick="onClick"
+            android:src="@mipmap/search" />
+    </RelativeLayout>
+    <!--    第二行选项栏-->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorWhite"
+        android:weightSum="4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/main_tv_zhishi"
+            style="@style/mainTvStyle"
+            android:text="书法知识"
+            android:onClick="onClick"
+            android:drawableTop="@mipmap/m_zhishi"/>
+        <TextView
+            android:id="@+id/main_tv_beitie"
+            style="@style/mainTvStyle"
+            android:text="碑帖临摹"
+            android:onClick="onClick"
+            android:drawableTop="@mipmap/m_beitie"/>
+
+        <TextView
+            android:id="@+id/main_tv_jiaoxue"
+            style="@style/mainTvStyle"
+            android:text="书法教学"
+            android:onClick="onClick"
+            android:drawableTop="@mipmap/m_daka" />
+
+        <TextView
+            android:id="@+id/main_tv_zidian"
+            style="@style/mainTvStyle"
+            android:text="书法字典"
+            android:onClick="onClick"
+            android:drawableTop="@mipmap/m_zidian"/>
+    </LinearLayout>
+    <!--    第三行选项栏-->
+    <LinearLayout
+    android:orientation="horizontal"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginTop="20dp"
+    android:background="@color/colorWhite"
+    android:weightSum="4"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/main_tv_duibi"
+        style="@style/mainTvStyle"
+        android:text="智能对比"
+        android:onClick="onClick"
+        android:drawableTop="@mipmap/m_zhishi"/>
+    <TextView
+        android:id="@+id/main_tv_shuxie"
+        style="@style/mainTvStyle"
+        android:text="智能书写"
+        android:onClick="onClick"
+        android:drawableTop="@mipmap/m_beitie"/>
+
+</LinearLayout>
+    <!--    每日一句-->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="40dp"
+        android:padding="20dp"
+        android:background="@drawable/main_et_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="每日一句"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/main_tv_juzi"
+            android:text="古之善书者多寿,心定故也。人能定其心,何事不可为。"
+            android:textSize="12sp"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</LinearLayout>
